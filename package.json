@@ -1,8 +1,12 @@
 {
   "name": "iframeable",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Checks is website is safe against iframing and clickjacking attack",
-  "main": "index.js",
+  "preferGlobal": true,
+  "main": "./index.js",
+  "bin": {
+    "iframeable": "./index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
