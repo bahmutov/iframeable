@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var request = require('request');
 var check = require('check-types');
 var chalk = require('chalk');
@@ -8,13 +10,14 @@ if (!check.webUrl(url)) {
   process.exit(-1);
 }
 
+var X_FRAME_OPTIONS = 'x-frame-options';
+var MORE_INFO_URL = 'https://www.owasp.org/index.php/Clickjacking_Defense_Cheat_Sheet';
+
 request(url, function (error, response) {
   if (error) {
     console.error('Could not check', chalk.underline(url));
     throw error;
   }
-  var X_FRAME_OPTIONS = 'x-frame-options';
-  var MORE_INFO_URL = 'https://www.owasp.org/index.php/Clickjacking_Defense_Cheat_Sheet';
 
   var value = response.headers[X_FRAME_OPTIONS];
   if (!check.unemptyString(value)) {
