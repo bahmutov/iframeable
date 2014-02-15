@@ -25,6 +25,7 @@
   "homepage": "https://github.com/bahmutov/iframeable",
   "dependencies": {
     "request": "~2.33.0",
-    "check-types": "~1.1.1"
+    "check-types": "~1.1.1",
+    "chalk": "~0.4.0"
   }
 }
