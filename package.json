@@ -22,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/bahmutov/iframeable/issues"
   },
-  "homepage": "https://github.com/bahmutov/iframeable"
+  "homepage": "https://github.com/bahmutov/iframeable",
+  "dependencies": {
+    "request": "~2.33.0",
+    "check-types": "~1.1.1"
+  }
 }
