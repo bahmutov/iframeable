@@ -1,0 +1,26 @@
+{
+  "name": "iframeable",
+  "version": "0.0.0",
+  "description": "Checks is website is safe against iframing and clickjacking attack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bahmutov/iframeable.git"
+  },
+  "keywords": [
+    "website",
+    "security",
+    "iframe",
+    "clickjacking",
+    "attack"
+  ],
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bahmutov/iframeable/issues"
+  },
+  "homepage": "https://github.com/bahmutov/iframeable"
+}
