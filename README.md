@@ -14,6 +14,8 @@ Values **DENY** and **SAMEORIGIN** are safe, **ALLOW-FROM** generates a warning.
 If this header is not set at all, an error message is displayed and utility
 exits with code -1.
 
+Think of *iframeable* as `curl -I <url>` but with explanation about a specific option.
+
 More information about clickjacking attack can be found at
 [owasp.org](https://www.owasp.org/index.php/Clickjacking_Defense_Cheat_Sheet).
 In a nutshell: the attacker creates a website with domain name similar to a good website,
