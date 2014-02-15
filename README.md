@@ -10,21 +10,20 @@ Checks is website is safe against iframing and clickjacking attack
     http://github.com denies being iframed, safe
 
 This utility checks if website responds with x-frame-options.
-Values **DENY** and **SAMEORIGIN** are safe, **ALLOW-FROM** generate a warning.
-If this header is not set, error message is displayed and utility
-exits with error code -1.
+Values **DENY** and **SAMEORIGIN** are safe, **ALLOW-FROM** generates a warning.
+If this header is not set at all, an error message is displayed and utility
+exits with code -1.
 
 More information about clickjacking attack can be found at
 [owasp.org](https://www.owasp.org/index.php/Clickjacking_Defense_Cheat_Sheet).
-In a nutshell: the attacker creates a website with similar domain name to good website,
-for example fake *http://bank-mobile.com* to lure *http://bank.com* customers.
-The attacker then iframes the entire *http://bank.come* website (100% width, 100% height),
-but overlays his own input fields, stealing usernames and passwords for example.
+In a nutshell: the attacker creates a website with domain name similar to a good website,
+for example fake *http://bank-mobile.com* to lure *http://bank.com*`s customers.
+The attacker then iframes the entire *http://bank.com* website (100% width, 100% height),
+but overlays his own input fields, stealing usernames and passwords, for example.
 
 Typical safe move: unless you have very good reason, do not allow iframing your
 website. All major browsers respect *x-frame-options* header. Just set it to **DENY**
 and the attacker will not have an easy way in.
-
 
 Author: Gleb Bahmutov &copy; 2014
 
@@ -38,8 +37,6 @@ Spread the word: tweet, star on github, etc.
 
 Support: if you find any problems with this module, email / tweet /
 [open issue](https://github.com/bahmutov/iframeable/issues) on Github
-
-
 
 ## MIT License
 
