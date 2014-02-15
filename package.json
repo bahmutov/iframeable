@@ -1,6 +1,6 @@
 {
   "name": "iframeable",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Checks is website is safe against iframing and clickjacking attack",
   "preferGlobal": true,
   "main": "./index.js",

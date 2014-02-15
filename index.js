@@ -6,7 +6,7 @@ var chalk = require('chalk');
 
 var url = process.argv[2];
 if (!check.webUrl(url)) {
-  console.error('Usage: node index.js <url>');
+  console.error('Usage: iframeable <url>');
   process.exit(-1);
 }
 

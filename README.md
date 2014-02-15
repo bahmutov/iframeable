@@ -5,6 +5,10 @@ Checks is website is safe against iframing and clickjacking attack
     npm install -g iframeable
     iframeable <url>
 
+    // example
+    iframeable http://github.com
+    http://github.com denies being iframed, safe
+
 This utility checks if website responds with x-frame-options.
 Values **DENY** and **SAMEORIGIN** are safe, **ALLOW-FROM** generate a warning.
 If this header is not set, error message is displayed and utility
