@@ -8,7 +8,7 @@
     "iframeable": "./index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jshint *.js"
   },
   "repository": {
     "type": "git",
@@ -31,5 +31,13 @@
     "request": "~2.33.0",
     "check-types": "~1.1.1",
     "chalk": "~0.4.0"
-  }
+  },
+  "devDependencies": {
+    "jshint": "2.7.0",
+    "pre-git": "0.2.1"
+  },
+  "pre-commit": [
+    "npm test",
+    "npm version"
+  ]
 }
