@@ -1,6 +1,6 @@
 {
   "name": "iframeable",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Checks is website is safe against iframing and clickjacking attack",
   "preferGlobal": true,
   "main": "./index.js",
@@ -8,7 +8,9 @@
     "iframeable": "./index.js"
   },
   "scripts": {
-    "test": "jshint *.js"
+    "test": "npm run jshint && npm run e2e",
+    "jshint": "jshint *.js",
+    "e2e": "node index.js https://github.com"
   },
   "repository": {
     "type": "git",
@@ -28,9 +30,9 @@
   },
   "homepage": "https://github.com/bahmutov/iframeable",
   "dependencies": {
-    "request": "~2.33.0",
-    "check-types": "~1.1.1",
-    "chalk": "~0.4.0"
+    "chalk": "1.0.0",
+    "check-types": "1.4.0",
+    "request": "2.55.0"
   },
   "devDependencies": {
     "jshint": "2.7.0",
