@@ -2,6 +2,12 @@
 
 Checks is website is safe against iframing and clickjacking attack
 
+[![NPM info][nodei.co]](https://npmjs.org/package/iframeable)
+
+[![Build status][ci-image]][ci-url]
+[![dependencies][dependencies-image]][dependencies-url]
+[![devdependencies][iframeable-devdependencies-image] ][iframeable-devdependencies-url]
+
     npm install -g iframeable
     iframeable <url>
 
@@ -31,7 +37,7 @@ Author: Gleb Bahmutov &copy; 2014
 
 * [@bahmutov](https://twitter.com/bahmutov)
 * [glebbahmutov.com](http://glebbahmutov.com)
-* [blog](http://bahmutov.calepin.co/)
+* [blog](http://glebbahmutov.com/blog)
 
 License: MIT - do anything with the code, but don't blame me if it does not work.
 
@@ -64,3 +70,11 @@ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
+
+[ci-image]: https://travis-ci.org/bahmutov/iframeable.png?branch=master
+[ci-url]: https://travis-ci.org/bahmutov/iframeable
+[nodei.co]: https://nodei.co/npm/iframeable.png?downloads=true
+[dependencies-image]: https://david-dm.org/bahmutov/iframeable.png
+[dependencies-url]: https://david-dm.org/bahmutov/iframeable
+[iframeable-devdependencies-image]: https://david-dm.org/bahmutov/iframeable/dev-status.png
+[iframeable-devdependencies-url]: https://david-dm.org/bahmutov/iframeable#info=devDependencies
